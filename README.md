@@ -1,5 +1,7 @@
 # КиноСписок
 
+Деплой: [https://chrisyuneva.github.io/moviesList/](https://chrisyuneva.github.io/moviesList/) (работает с VPN)
+
 Реализация адаптивного веб-приложения для просмотра списка фильмов.
 
 Приложение состоит из двух страниц:
