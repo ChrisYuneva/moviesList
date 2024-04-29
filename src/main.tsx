@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Layout from './components/layout/index.tsx';
 import MainPage from './pages/mainPage/index.tsx';
+import MoviePage from './pages/moviePage/index.tsx';
 
 import './index.css';
-import MoviePage from './pages/moviePage/index.tsx';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
   },
 ], 
   {
-    basename: '/moviesList',
+    basename: import.meta.env.DEV ? '/' : '/moviesList',
   }
 );
 
