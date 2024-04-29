@@ -20,9 +20,13 @@ const router = createBrowserRouter([
         path: '/movie/:id',
         element: <MoviePage />,
       }
-    ]
+    ],
   },
-]);
+], 
+  {
+    basename: '/moviesList',
+  }
+);
 
 const queryClient = new QueryClient();
 
