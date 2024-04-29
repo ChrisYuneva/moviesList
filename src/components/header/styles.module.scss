@@ -1,0 +1,13 @@
+@import '../../styles/helpers.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--color-orange);
+
+    .link {
+        @include text(24px, white);
+        text-decoration: none;
+    }
+}

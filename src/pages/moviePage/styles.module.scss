@@ -1,0 +1,143 @@
+@import '../../styles/helpers.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 40px;
+
+  @include for-desktop {
+    gap: 35px;
+  }
+
+  .content {
+    display: flex;
+
+    @include for-phone {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .poster {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+    @include for-phone {
+      width: 100%;
+    }
+
+    @include for-tablet {
+      width: 50%;
+    }
+
+    @include for-desktop {
+      width: 40%;
+    }
+
+    .img {
+      width: 70%;
+      max-height: 350px;
+      object-fit: contain;
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    color: white;
+
+    @include for-phone {
+      width: 100%;
+      gap: 18px;
+    }
+
+    @include for-tablet {
+      width: 50%;
+      gap: 20px;
+    }
+
+    .titleWrap {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        @include text(32px, white);
+        font-weight: 700;
+
+        @include for-phone {
+          font-size: 24px;
+        }
+
+        @include for-tablet {
+          font-size: 24px;
+        }
+
+        @include for-desktop {
+          font-size: 28px;
+        }
+      }
+
+      .rating {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .ratingImg {
+          width: 30px;
+          height: 30px;
+          @include for-phone {
+            width: 20px;
+            height: 20px;
+          }
+
+          @include for-tablet {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        .ratingItem {
+          @include text(32px, white);
+          @include for-phone {
+            font-size: 24px;
+          }
+          @include for-tablet {
+            font-size: 24px;
+          }
+          @include for-desktop {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .text {
+      @include text(21px, white);
+
+      @include for-tablet {
+        font-size: 18px;
+      }
+    }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      @include for-phone {
+        gap: 8px;
+      }
+    }
+  }
+}
+
+.error {
+  color: white;
+  margin: 0 auto;
+  width: fit-content;
+}

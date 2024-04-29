@@ -1,0 +1,20 @@
+@mixin text($font-size, $color: var(--white)) {
+  font-size: $font-size;
+  color: $color;
+}
+
+@mixin for-phone {
+  @media (max-width: 426px) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (min-width: 426px) and (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    @content;
+  }
+}

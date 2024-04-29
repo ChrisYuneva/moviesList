@@ -1,0 +1,15 @@
+@import '../../styles/helpers.scss';
+
+.container {
+    display: flex;
+    gap: 5px;
+    
+    .title {
+        @include text(18px, white);
+        opacity: .85;
+    }
+
+    .text {
+        @include text(18px, white);
+    }
+}

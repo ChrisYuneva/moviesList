@@ -1,0 +1,28 @@
+@import '../../styles/helpers.scss';
+
+.btn {
+    width: 30%;
+    padding: 16px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid var(--color-orange);
+    @include text(18px, var(--color-orange));
+    cursor: pointer;
+
+    &:hover {
+        background: var(--color-orange);
+        color: white;
+    }
+
+    @include for-phone {
+        width: 100%;
+    }
+
+    @include for-tablet {
+        width: 100%;
+    }
+
+    @include for-desktop {
+        width: 40%;
+    }
+}

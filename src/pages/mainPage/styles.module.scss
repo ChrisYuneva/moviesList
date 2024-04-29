@@ -1,0 +1,30 @@
+@import '../../styles/helpers.scss';
+
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @include for-phone {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include for-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include for-desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.error {
+  color: white;
+  margin: 0 auto;
+  width: fit-content;
+}
